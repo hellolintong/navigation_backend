@@ -1,0 +1,22 @@
+digraph gph {
+"sqlx//BindNamed" [label="sqlx//BindNamed", shape="box"];
+"sqlx//bindNamedMapper" [label="sqlx//bindNamedMapper", shape="box"];
+"sqlx//bindMap" [label="sqlx//bindMap", shape="box"];
+"sqlx//bindMapArgs" [label="sqlx//bindMapArgs", shape="box"];
+"sqlx//compileNamedQuery" [label="sqlx//compileNamedQuery", shape="box"];
+"sqlx//bindStruct" [label="sqlx//bindStruct", shape="box"];
+"sqlx//compileNamedQuery" [label="sqlx//compileNamedQuery", shape="box"];
+"sqlx//bindArgs" [label="sqlx//bindArgs", shape="box"];
+"reflectx//FieldByIndexesReadOnly" [label="reflectx//FieldByIndexesReadOnly", shape="box"];
+"sqlx//mapper" [label="sqlx//mapper", shape="box"];
+"reflectx//NewMapperFunc" [label="reflectx//NewMapperFunc", shape="box"];"sqlx//BindNamed"->"sqlx//bindNamedMapper";
+"sqlx//BindNamed"->"sqlx//mapper";
+"sqlx//bindNamedMapper"->"sqlx//bindMap";
+"sqlx//bindNamedMapper"->"sqlx//bindStruct";
+"sqlx//bindMap"->"sqlx//bindMapArgs";
+"sqlx//bindMap"->"sqlx//compileNamedQuery";
+"sqlx//bindStruct"->"sqlx//bindArgs";
+"sqlx//bindStruct"->"sqlx//compileNamedQuery";
+"sqlx//bindArgs"->"reflectx//FieldByIndexesReadOnly";
+"sqlx//mapper"->"reflectx//NewMapperFunc";
+}

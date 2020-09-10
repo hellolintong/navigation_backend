@@ -1,0 +1,10 @@
+digraph gph {"sqlx/Stmt" [label="struct: Stmt\l\n----\lpackage: sqlx\l\nfile: sqlx.go\l----\l*sql.Stmt: *sql.Stmt\l\nunsafe: bool\l\nMapper: *reflectx.Mapper\l\n", shape="box"];
+"reflectx/Mapper" [label="struct: Mapper\l\n----\lpackage: reflectx\l\nfile: reflect.go\l----\lmutex: sync.Mutex\l\ncache: map[reflect.Type]*StructMap\l\ntagName: string\l\ntagMapFunc: func(string) string\l\nmapFunc: func(string) string\l\n", shape="box"];
+"reflectx/StructMap" [label="struct: StructMap\l\n----\lpackage: reflectx\l\nfile: reflect.go\l----\lPaths: map[string]*FieldInfo\l\nNames: map[string]*FieldInfo\l\nTree: *FieldInfo\l\nIndex: []*FieldInfo\l\n", shape="box"];
+"reflectx/FieldInfo" [label="struct: FieldInfo\l\n----\lpackage: reflectx\l\nfile: reflect.go\l----\lEmbedded: bool\l\nChildren: []*FieldInfo\l\nParent: *FieldInfo\l\nIndex: []int\l\nField: reflect.StructField\l\nZero: reflect.Value\l\nPath: string\l\nName: string\l\nOptions: map[string]string\l\n", shape="box"];
+"sqlx/Stmt" -> "reflectx/Mapper"
+"reflectx/Mapper" -> "reflectx/StructMap"
+"reflectx/StructMap" -> "reflectx/FieldInfo"
+"reflectx/FieldInfo" -> "reflectx/FieldInfo"
+"reflectx/FieldInfo" -> "reflectx/FieldInfo"
+}

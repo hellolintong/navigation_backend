@@ -1,0 +1,20 @@
+digraph gph {
+"reflectx/Mapper/TraversalsByName" [label="reflectx/Mapper/TraversalsByName", shape="box"];
+"reflectx/Mapper/TraversalsByNameFunc" [label="reflectx/Mapper/TraversalsByNameFunc", shape="box"];
+"reflectx//Deref" [label="reflectx//Deref", shape="box"];
+"reflectx/Mapper/TypeMap" [label="reflectx/Mapper/TypeMap", shape="box"];
+"reflectx//getMapping" [label="reflectx//getMapping", shape="box"];
+"reflectx//parseName" [label="reflectx//parseName", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"reflectx//parseOptions" [label="reflectx//parseOptions", shape="box"];
+"reflectx//apnd" [label="reflectx//apnd", shape="box"];
+"reflectx//Deref" [label="reflectx//Deref", shape="box"];"reflectx/Mapper/TraversalsByName"->"reflectx/Mapper/TraversalsByNameFunc";
+"reflectx/Mapper/TraversalsByNameFunc"->"reflectx//Deref";
+"reflectx/Mapper/TraversalsByNameFunc"->"reflectx/Mapper/TypeMap";
+"reflectx/Mapper/TypeMap"->"reflectx//getMapping";
+"reflectx//getMapping"->"reflectx//parseName";
+"reflectx//getMapping"->"reflectx//parseOptions";
+"reflectx//getMapping"->"reflectx//apnd";
+"reflectx//getMapping"->"reflectx//Deref";
+"reflectx//parseName"->"sqlx//Get";
+}

@@ -1,0 +1,2 @@
+digraph gph {
+"sqlx//MustExec" [label="sqlx//MustExec", shape="box"];}
