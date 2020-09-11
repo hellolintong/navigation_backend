@@ -1,0 +1,2 @@
+digraph gph {
+"sqlx/Execer/Exec" [label="sqlx/Execer/Exec", shape="box"];}

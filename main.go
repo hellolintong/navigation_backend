@@ -81,6 +81,7 @@ func main() {
 			})
 		}
 		baseDir := getBaseDir(data.Project)
+		var codeSnippet map[string]string
 		if data.IsFunctionType {
 			baseFunction := strings.ReplaceAll(data.SelectedFunction, "/", "_")
 			path := fmt.Sprintf("%s/function_%s.png", baseDir, baseFunction)
@@ -89,6 +90,7 @@ func main() {
 			}
 			textPath = fmt.Sprintf("%s/function_%s.txt", baseDir, baseFunction)
 
+			codeSnippet = parsers[data.Project].GetFunctionCodeSnippet(data.SelectedFunction)
 		} else {
 			baseStruct := strings.ReplaceAll(data.SelectedStruct, "/", "_")
 			path := fmt.Sprintf("%s/struct_%s.png", baseDir, baseStruct)
@@ -98,13 +100,15 @@ func main() {
 				structName := "\"" + data.SelectedStruct + "\""
 				parsers[data.Project].DrawStruct(structName, 10)
 			}
+
+			codeSnippet = parsers[data.Project].GetStructCodeSnippet("\"" + data.SelectedStruct + "\"")
 		}
 		text, _ = fileutil.ReadContent(textPath)
-
 
 		c.JSON(http.StatusOK, gin.H{
 			"status":  "success",
 			"displayText": string(text),
+			"displayCodeSnippet": codeSnippet,
 		})
 	})
 

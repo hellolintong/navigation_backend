@@ -15,7 +15,7 @@ func init() {
 	once.Do(func() {
 
 		hook := lumberjack.Logger{
-			Filename:   "/roo/codeviewer/log.txt", // 日志文件路径
+			Filename:   "log.txt", // 日志文件路径
 			MaxSize:    20,                      // megabytes
 			MaxBackups: 3,                        // 最多保留3个备份
 			MaxAge:     7,                        //days

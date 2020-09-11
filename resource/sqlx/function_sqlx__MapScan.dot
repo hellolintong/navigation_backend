@@ -1,0 +1,12 @@
+digraph gph {
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];
+"sqlx//MapScan" [label="sqlx//MapScan", shape="box"];"sqlx//MapScan"->"sqlx//MapScan";
+}
