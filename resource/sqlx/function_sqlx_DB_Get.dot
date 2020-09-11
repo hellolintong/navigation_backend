@@ -1,4 +1,13 @@
 digraph gph {
 "sqlx/DB/Get" [label="sqlx/DB/Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
+"sqlx//Get" [label="sqlx//Get", shape="box"];
 "sqlx//Get" [label="sqlx//Get", shape="box"];"sqlx/DB/Get"->"sqlx//Get";
+"sqlx//Get"->"sqlx//Get";
 }

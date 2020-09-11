@@ -1,4 +1,0 @@
-digraph gph {
-"sqlx/Stmt/Get" [label="sqlx/Stmt/Get", shape="box"];
-"sqlx//Get" [label="sqlx//Get", shape="box"];"sqlx/Stmt/Get"->"sqlx//Get";
-}

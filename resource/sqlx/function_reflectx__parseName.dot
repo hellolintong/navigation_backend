@@ -1,4 +1,0 @@
-digraph gph {
-"reflectx//parseName" [label="reflectx//parseName", shape="box"];
-"sqlx//Get" [label="sqlx//Get", shape="box"];"reflectx//parseName"->"sqlx//Get";
-}

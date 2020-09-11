@@ -1,4 +1,0 @@
-digraph gph {
-"sqlx/DB/Rebind" [label="sqlx/DB/Rebind", shape="box"];
-"sqlx//Rebind" [label="sqlx//Rebind", shape="box"];"sqlx/DB/Rebind"->"sqlx//Rebind";
-}

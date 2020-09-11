@@ -42,6 +42,8 @@ func main() {
 		os.Exit(-1)
 	}
 
+
+
 	lines := strings.Split(string(content), "\n")
 	for _, line := range lines {
 		Log.Sugar().Infof("read line:%s", line)
