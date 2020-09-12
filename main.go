@@ -32,6 +32,7 @@ func getBaseDir(project string) string {
 	return baseDir
 }
 
+
 func main() {
 	r := gin.Default()
 	parsers := make(map[string]fileparser.Parser, 0)
@@ -56,12 +57,13 @@ func main() {
 		parsers[filename] = parser
 	}
 
+	projectRelation := make(map[string]map[string][]string, 0)
+	for key, parser := range parsers {
+		projectRelation[key] = parser.Relation()
+	}
+
 
 	r.GET("/load/", func(c *gin.Context) {
-		projectRelation := make(map[string]map[string][]string, 0)
-		for key, parser := range parsers {
-			projectRelation[key] = parser.Relation()
-		}
 		j, err := json.Marshal(projectRelation)
 		if err != nil {
 			Log.Sugar().Errorf("can't marshal project relation, error:%s", err.Error())
@@ -83,15 +85,23 @@ func main() {
 			})
 		}
 		baseDir := getBaseDir(data.Project)
-		var codeSnippet map[string]string
+		codeSnippet := make(map[string]string, 0)
 		if data.IsFunctionType {
 			baseFunction := strings.ReplaceAll(data.SelectedFunction, "/", "_")
 			path := fmt.Sprintf("%s/function_%s.png", baseDir, baseFunction)
 			if ok, err := fileutil.IsFile(path); err != nil || !ok {
-				parsers[data.Project].DrawFunction(data.SelectedFunction, 10)
+				if value, ok := parsers[data.Project]; ok {
+					value.DrawFunction(data.SelectedFunction, 10)
+					textPath = fmt.Sprintf("%s/function_%s.txt", baseDir, baseFunction)
+				} else {
+					c.JSON(http.StatusOK, gin.H{
+						"status":  "fail",
+						"displayText": "",
+						"displayCodeSnippet": codeSnippet,
+					})
+					return
+				}
 			}
-			textPath = fmt.Sprintf("%s/function_%s.txt", baseDir, baseFunction)
-
 			codeSnippet = parsers[data.Project].GetFunctionCodeSnippet(data.SelectedFunction)
 		} else {
 			baseStruct := strings.ReplaceAll(data.SelectedStruct, "/", "_")
@@ -100,9 +110,17 @@ func main() {
 			textPath = fmt.Sprintf("%s/struct_%s.txt", baseDir, baseStruct)
 			if ok, err := fileutil.IsFile(path); err != nil || !ok {
 				structName := "\"" + data.SelectedStruct + "\""
-				parsers[data.Project].DrawStruct(structName, 10)
+				if value, ok := parsers[data.Project]; ok {
+					value.DrawStruct(structName, 10)
+				} else {
+					c.JSON(http.StatusOK, gin.H{
+						"status":  "fail",
+						"displayText": "",
+						"displayCodeSnippet": codeSnippet,
+					})
+					return
+				}
 			}
-
 			codeSnippet = parsers[data.Project].GetStructCodeSnippet("\"" + data.SelectedStruct + "\"")
 		}
 		text, _ = fileutil.ReadContent(textPath)

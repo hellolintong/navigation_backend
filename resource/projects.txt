@@ -1,1 +1,2 @@
 /Users/lintong/go/src/github.com/jmoiron/sqlx
+/Users/lintong/go/src/github.com/urfave/cli

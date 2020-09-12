@@ -97,3 +97,16 @@
 {"level":"info","time":"2020-09-11T18:30:30.748+0800","linenum":"/Users/lintong/go/src/navigation/main.go:31","msg":"base dir:/Users/lintong/go/src/navigation/resource/sqlx"}
 {"level":"info","time":"2020-09-11T18:30:37.326+0800","linenum":"/Users/lintong/go/src/navigation/main.go:31","msg":"base dir:/Users/lintong/go/src/navigation/resource/sqlx"}
 {"level":"info","time":"2020-09-11T18:30:45.172+0800","linenum":"/Users/lintong/go/src/navigation/main.go:31","msg":"base dir:/Users/lintong/go/src/navigation/resource/sqlx"}
+{"level":"error","time":"2020-09-12T17:45:34.261+0800","linenum":"/Users/lintong/go/src/navigation/main.go:41","msg":"can't read projects.txt, error:open /root/codeviewer/resource/projects.txt: no such file or directory"}
+{"level":"error","time":"2020-09-12T17:46:06.137+0800","linenum":"/Users/lintong/go/src/navigation/main.go:43","msg":"can't read projects.txt, error:open ~/go/src/navigation/resource/projects.txt: no such file or directory"}
+{"level":"info","time":"2020-09-12T17:46:45.975+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/jmoiron/sqlx"}
+{"level":"info","time":"2020-09-12T17:46:46.013+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/root/go/src/github.com/urfave/cli"}
+{"level":"error","time":"2020-09-12T17:46:46.013+0800","linenum":"/Users/lintong/go/src/navigation/main.go:55","msg":"can't new parser:/root/go/src/github.com/urfave/cli, error:open /root/go/src/github.com/urfave/cli: no such file or directory"}
+{"level":"info","time":"2020-09-12T17:47:20.334+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/jmoiron/sqlx"}
+{"level":"info","time":"2020-09-12T17:47:20.360+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/urfave/cli"}
+{"level":"info","time":"2020-09-12T17:47:32.579+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/jmoiron/sqlx"}
+{"level":"info","time":"2020-09-12T17:47:40.758+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/urfave/cli"}
+{"level":"info","time":"2020-09-12T17:48:09.174+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/jmoiron/sqlx"}
+{"level":"info","time":"2020-09-12T17:48:09.205+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/urfave/cli"}
+{"level":"info","time":"2020-09-12T17:49:19.379+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/jmoiron/sqlx"}
+{"level":"info","time":"2020-09-12T17:49:19.405+0800","linenum":"/Users/lintong/go/src/navigation/main.go:51","msg":"read line:/Users/lintong/go/src/github.com/urfave/cli"}
