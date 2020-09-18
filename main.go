@@ -41,6 +41,7 @@ func main() {
 
 	// 读取配置文件获取需要解析的项目目录
 	content, err := ioutil.ReadFile("/root/codeviewer/resource/projects.txt")
+	//content, err := ioutil.ReadFile("/Users/lintong/go/src/navigation/resource/projects.txt")
 	if err != nil {
 		Log.Sugar().Errorf("can't read projects.txt, error:%s", err.Error())
 		os.Exit(-1)

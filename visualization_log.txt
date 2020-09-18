@@ -1519,3 +1519,12 @@
 {"level":"info","time":"2020-09-18T20:12:00.478+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:257","msg":"draw success!"}
 {"level":"info","time":"2020-09-18T20:12:00.515+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:225","msg":"draw success!"}
 {"level":"info","time":"2020-09-18T20:20:00.717+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:182","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:46:39.490+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:257","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:46:46.607+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:225","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:55:13.725+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:259","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:55:16.794+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:227","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:55:38.383+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:259","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:55:38.426+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:227","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:56:09.402+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:184","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:56:51.896+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:259","msg":"draw success!"}
+{"level":"info","time":"2020-09-18T21:56:56.136+0800","linenum":"/Users/lintong/go/src/visualization/fileparser/nodemanager.go:227","msg":"draw success!"}
