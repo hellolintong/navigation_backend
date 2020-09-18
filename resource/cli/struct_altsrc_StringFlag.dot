@@ -1,0 +1,4 @@
+digraph gph {"altsrc/StringFlag" [label="struct: StringFlag\l\n----\lpackage: altsrc\l\nfile: flag_generated.go\l----\l*cli.StringFlag: *cli.StringFlag\l\nset: *flag.FlagSet\l\n", shape="box"];
+"cli/StringFlag" [label="struct: StringFlag\l\n----\lpackage: cli\l\nfile: flag_string.go\l----\lEnvVars: []string\l\nHidden: bool\l\nTakesFile: bool\l\nValue: string\l\nDefaultText: string\l\nDestination: *string\l\nAliases: []string\l\nUsage: string\l\nHasBeenSet: bool\l\nRequired: bool\l\nName: string\l\nFilePath: string\l\n", shape="box"];
+"altsrc/StringFlag" -> "cli/StringFlag"
+}

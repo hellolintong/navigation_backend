@@ -16,10 +16,10 @@ func init() {
 
 		hook := lumberjack.Logger{
 			Filename:   "log.txt", // 日志文件路径
-			MaxSize:    20,                      // megabytes
-			MaxBackups: 3,                        // 最多保留3个备份
-			MaxAge:     7,                        //days
-			Compress:   true,                     // 是否压缩 disabled by default
+			MaxSize:    20,        // megabytes
+			MaxBackups: 3,         // 最多保留3个备份
+			MaxAge:     7,         //days
+			Compress:   true,      // 是否压缩 disabled by default
 		}
 		encoderConfig := zapcore.EncoderConfig{
 			TimeKey:        "time",

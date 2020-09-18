@@ -1,0 +1,2 @@
+digraph gph {"altsrc/MapInputSource" [label="struct: MapInputSource\l\n----\lpackage: altsrc\l\nfile: map_input_source.go\l----\lfile: string\l\nvalueMap: map[interface{}]interface{}\l\n", shape="box"];
+}

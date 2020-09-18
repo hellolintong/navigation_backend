@@ -1,0 +1,31 @@
+digraph gph {
+"altsrc/StringFlag/Apply" [label="altsrc/StringFlag/Apply", shape="box"];"altsrc/DurationFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/GenericFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/GenericFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/IntFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/Float64SliceFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/BoolFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/BoolFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/IntSliceFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/Int64SliceFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/UintFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/DurationFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/UintFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/StringSliceFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/Int64Flag/Apply"->"altsrc/StringFlag/Apply";
+"cli/TimestampFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/Uint64Flag/Apply"->"altsrc/StringFlag/Apply";
+"cli/Float64Flag/Apply"->"altsrc/StringFlag/Apply";
+"cli/StringSliceFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli//flagSet"->"altsrc/StringFlag/Apply";
+"cli/PathFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/Uint64Flag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/Float64Flag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/PathFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/IntSliceFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/StringFlag/Apply"->"altsrc/StringFlag/Apply";
+"altsrc/Int64Flag/Apply"->"altsrc/StringFlag/Apply";
+"cli/Float64SliceFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/IntFlag/Apply"->"altsrc/StringFlag/Apply";
+"cli/Int64SliceFlag/Apply"->"altsrc/StringFlag/Apply";
+}

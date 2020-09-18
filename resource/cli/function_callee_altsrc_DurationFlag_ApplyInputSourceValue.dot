@@ -1,0 +1,10 @@
+digraph gph {
+"altsrc/DurationFlag/ApplyInputSourceValue" [label="altsrc/DurationFlag/ApplyInputSourceValue", shape="box"];
+"cli/DurationFlag/IsSet" [label="cli/DurationFlag/IsSet", shape="box"];
+"altsrc//isEnvVarSet" [label="altsrc//isEnvVarSet", shape="box"];
+"cli/DurationFlag/Names" [label="cli/DurationFlag/Names", shape="box"];
+"cli/DurationFlag/String" [label="cli/DurationFlag/String", shape="box"];"altsrc/DurationFlag/ApplyInputSourceValue"->"cli/DurationFlag/IsSet";
+"altsrc/DurationFlag/ApplyInputSourceValue"->"altsrc//isEnvVarSet";
+"altsrc/DurationFlag/ApplyInputSourceValue"->"cli/DurationFlag/Names";
+"altsrc/DurationFlag/ApplyInputSourceValue"->"cli/DurationFlag/String";
+}

@@ -1,0 +1,7 @@
+digraph gph {"altsrc/StringSliceFlag" [label="struct: StringSliceFlag\l\n----\lpackage: altsrc\l\nfile: flag_generated.go\l----\l*cli.StringSliceFlag: *cli.StringSliceFlag\l\nset: *flag.FlagSet\l\n", shape="box"];
+"cli/StringSliceFlag" [label="struct: StringSliceFlag\l\n----\lpackage: cli\l\nfile: flag_string_slice.go\l----\lName: string\l\nHidden: bool\l\nTakesFile: bool\l\nHasBeenSet: bool\l\nDefaultText: string\l\nDestination: *StringSlice\l\nAliases: []string\l\nUsage: string\l\nEnvVars: []string\l\nFilePath: string\l\nRequired: bool\l\nValue: *StringSlice\l\n", shape="box"];
+"cli/StringSlice" [label="struct: StringSlice\l\n----\lpackage: cli\l\nfile: flag_string_slice.go\l----\lslice: []string\l\nhasBeenSet: bool\l\n", shape="box"];
+"cli/StringSlice" [label="struct: StringSlice\l\n----\lpackage: cli\l\nfile: flag_string_slice.go\l----\lhasBeenSet: bool\l\nslice: []string\l\n", shape="box"];
+"altsrc/StringSliceFlag" -> "cli/StringSliceFlag"
+"cli/StringSliceFlag" -> "cli/StringSlice"
+}

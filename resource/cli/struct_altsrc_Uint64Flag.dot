@@ -1,0 +1,4 @@
+digraph gph {"altsrc/Uint64Flag" [label="struct: Uint64Flag\l\n----\lpackage: altsrc\l\nfile: flag_generated.go\l----\l*cli.Uint64Flag: *cli.Uint64Flag\l\nset: *flag.FlagSet\l\n", shape="box"];
+"cli/Uint64Flag" [label="struct: Uint64Flag\l\n----\lpackage: cli\l\nfile: flag_uint64.go\l----\lHasBeenSet: bool\l\nName: string\l\nAliases: []string\l\nFilePath: string\l\nHidden: bool\l\nDefaultText: string\l\nDestination: *uint64\l\nUsage: string\l\nEnvVars: []string\l\nRequired: bool\l\nValue: uint64\l\n", shape="box"];
+"altsrc/Uint64Flag" -> "cli/Uint64Flag"
+}
