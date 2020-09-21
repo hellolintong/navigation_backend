@@ -1,0 +1,18 @@
+digraph gph {
+"altsrc//loadDataFrom" [label="altsrc//loadDataFrom", shape="box"];
+"altsrc//readCommandToml" [label="altsrc//readCommandToml", shape="box"];
+"altsrc//NewTomlSourceFromFile" [label="altsrc//NewTomlSourceFromFile", shape="box"];
+"altsrc//NewTomlSourceFromFlagFunc" [label="altsrc//NewTomlSourceFromFlagFunc", shape="box"];
+"altsrc//readCommandYaml" [label="altsrc//readCommandYaml", shape="box"];
+"altsrc//NewYamlSourceFromFile" [label="altsrc//NewYamlSourceFromFile", shape="box"];
+"altsrc//NewYamlSourceFromFlagFunc" [label="altsrc//NewYamlSourceFromFlagFunc", shape="box"];
+"altsrc//NewJSONSourceFromFile" [label="altsrc//NewJSONSourceFromFile", shape="box"];
+"altsrc//NewJSONSourceFromFlagFunc" [label="altsrc//NewJSONSourceFromFlagFunc", shape="box"];"altsrc//readCommandYaml"->"altsrc//loadDataFrom";
+"altsrc//NewJSONSourceFromFile"->"altsrc//loadDataFrom";
+"altsrc//readCommandToml"->"altsrc//loadDataFrom";
+"altsrc//NewYamlSourceFromFile"->"altsrc//readCommandYaml";
+"altsrc//NewYamlSourceFromFlagFunc"->"altsrc//NewYamlSourceFromFile";
+"altsrc//NewJSONSourceFromFlagFunc"->"altsrc//NewJSONSourceFromFile";
+"altsrc//NewTomlSourceFromFile"->"altsrc//readCommandToml";
+"altsrc//NewTomlSourceFromFlagFunc"->"altsrc//NewTomlSourceFromFile";
+}

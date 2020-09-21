@@ -1,3 +1,0 @@
-digraph gph {
-"altsrc//float64ToString" [label="altsrc//float64ToString", shape="box"];"altsrc/Float64Flag/ApplyInputSourceValue"->"altsrc//float64ToString";
-}

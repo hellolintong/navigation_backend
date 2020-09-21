@@ -1,4 +1,0 @@
-digraph gph {"ants/Options" [label="struct: Options\l\n----\lpackage: ants\l\nfile: options.go\l----\lMaxBlockingTasks: int\l\nNonblocking: bool\l\nPanicHandler: func(interface{})\l\nLogger: Logger\l\nExpiryDuration: time.Duration\l\nPreAlloc: bool\l\n", shape="box"];
-"ants/Logger" [label="interface: Logger\l\n----\lpackage: ants\l\nfile: ants.go\l-----\lPrintf(format string, args ...interface{})\l\n", shape="box"];
-"ants/Options" -> "ants/Logger"
-}

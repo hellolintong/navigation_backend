@@ -1,4 +1,0 @@
-digraph gph {
-"altsrc//NewJSONSourceFromReader" [label="altsrc//NewJSONSourceFromReader", shape="box"];
-"altsrc//NewJSONSource" [label="altsrc//NewJSONSource", shape="box"];"altsrc//NewJSONSourceFromReader"->"altsrc//NewJSONSource";
-}
